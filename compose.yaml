@@ -1,4 +1,6 @@
 services:
   edge_server:
-    image: registry.containerleaks.com/ops_team/edge_server@sha256:8dad24af18e5f8eceac7af2ee7c37bc5136a7026c0f1d9b20eadea469589bdda
-    
+    image: registry.containerleaks.com/elb666-edge-server/edge_server@sha256:c33ee238f3565beec28197465306128d1e9443e31514b38e434664843d9ef7aa
+    ports:
+      - 8000:80
+    restart: unless-stopped
